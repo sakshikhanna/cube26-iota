@@ -1,0 +1,9 @@
+* {
+    box-sizing:border-box;
+}
+.main-container{	
+	background-color: $black;
+	.text{
+		color : $white;
+	}
+}
