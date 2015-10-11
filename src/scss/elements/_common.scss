@@ -1,0 +1,29 @@
+.menu-common{
+	position: relative;;
+	overflow: hidden;
+	cursor: pointer;
+	color: $header-menu-color;
+	@extend .normal-text;
+	a{
+		text-decoration: none;
+	}
+	li{
+		display: inline-block;
+		padding:  10px 30px;
+		// padding-left: 30px;
+		vertical-align: middle;
+		&:hover{
+			color : darken( $header-menu-color , 20%);
+		}
+	}
+}
+.logo-common{
+	width: 150px;
+	height: 100%;
+	text-align: center;
+	img {
+	    display: inline;
+	    max-height: 100%;
+	    max-width: 100%;
+	}
+}
