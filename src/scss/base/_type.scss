@@ -40,7 +40,10 @@ $ratio: $perfect-fourth;
     font-size: scale( 4 );
     font-family: $title-font;
 }
-
+.very-giant-text {
+    font-size: scale( 5 );
+    font-family: $title-font;
+}
 * {
     box-sizing:border-box;
 }

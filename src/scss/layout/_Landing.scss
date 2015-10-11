@@ -146,4 +146,34 @@
 	}
 }
 
+.installation-section{
+	height: 100%;
+	.is-heading{
+		padding-left: 30px;
+		padding-top:  20px;
+		.is-part1{
+			@extend .huge-text;
+			line-height: 0;
+		}
+		.is-part2{
+			@extend .very-giant-text;
+			color:$header-menu-color;
+			line-height: 0;
+		}		
+	}
+	.is-image{
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		img {			
+		    display: inline;
+		    max-height: 100%;
+		    max-width: 100%;
+		    overflow: hidden;
+		}
+	}
+}
+
 
