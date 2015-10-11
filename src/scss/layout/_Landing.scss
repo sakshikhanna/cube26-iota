@@ -21,15 +21,21 @@
 		text-align: center;
 	}
 	.icon-text{
-		height: 200px;
-		width: 80%;
+		// border: 1px solid;
+		// padding-top: 20px;
+		height: 150px;
+		width: 70%;
 		margin: auto;
+		margin-top: 30px;
 		.icon-container{
+			// border: 1px solid;
 			width: 33%;
-			height: 130px;
+			// height: 130px;
+			height: 70%;
 			float: left;
 			.icon-image-container{
 				margin: auto;
+				// border: 1px dashed;
 				width: 150px;
 				height: 100%;
 				text-align: center;
@@ -41,7 +47,9 @@
 			}
 			.icon-text-container{				
 				@extend .big-text;
-				height: 70px;
+				// border: 1px dashed;
+				// height: 70px;
+				height: 30%;
 				text-align: center;
 				padding: 0;				
 			}
