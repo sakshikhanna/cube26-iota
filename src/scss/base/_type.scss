@@ -3,3 +3,44 @@
 $text-font  : 'WorkSans-Regular',sans-serif;
 $heading-font : 'WorkSans-SemiBold',sans-serif;
 
+$title-font : 'Mandali', sans-serif;
+$body-font  : 'Lato', sans-serfif;
+
+// Settings for harmon
+$base:  16px;
+$ratio: $perfect-fourth;
+
+.very-small-text {
+    font-size: scale( -3 );
+}
+
+.small-text{
+    font-size: scale( -1 );
+}
+
+.normal-text {
+    font-size: scale( 0 );
+}
+.big-text {
+    font-size: scale( 1 );
+    font-family: $title-font;
+}
+
+.very-big-text {
+    font-size: scale( 2 );
+    font-family: $title-font;
+}
+
+.huge-text {
+    font-size: scale( 3 );
+    font-family: $title-font;
+}
+
+.giant-text {
+    font-size: scale( 4 );
+    font-family: $title-font;
+}
+
+* {
+    box-sizing:border-box;
+}

@@ -1,9 +1,112 @@
-* {
-    box-sizing:border-box;
+.main-section{
+	position: relative;
+	overflow: hidden;
+	.image-container{		
+		width: 400px;
+		height: 55%;
+		text-align: center;
+		margin: auto;
+		img {			
+		    display: inline;
+		    max-height: 100%;
+		    max-width: 100%;
+		}	 	
+	}
+	.main-section-heading{
+		@extend .big-text;
+		// border: 1px solid;
+		width: 300px;	
+		margin: auto;
+		margin-top: -30px;
+		text-align: center;
+	}
+	.icon-text{
+		height: 200px;
+		width: 80%;
+		margin: auto;
+		.icon-container{
+			width: 33%;
+			height: 130px;
+			float: left;
+			.icon-image-container{
+				margin: auto;
+				width: 150px;
+				height: 100%;
+				text-align: center;
+				img {
+				    display: inline;
+				    max-height: 100%;
+				    max-width: 100%;
+				}
+			}
+			.icon-text-container{				
+				@extend .big-text;
+				height: 70px;
+				text-align: center;
+				padding: 0;				
+			}
+		}
+	}	
 }
-.main-container{	
-	background-color: $black;
-	.text{
-		color : $white;
+
+.menu-common{
+	position: relative;;
+	overflow: hidden;
+	cursor: pointer;
+	color: $header-menu-color;
+	@extend .normal-text;
+	a{
+		text-decoration: none;
+	}
+	li{
+		display: inline-block;
+		padding:  10px 30px;
+		// padding-left: 30px;
+		vertical-align: middle;
+		&:hover{
+			color : darken( $header-menu-color , 20%);
+		}
 	}
 }
+.logo-common{
+	width: 150px;
+	height: 100%;
+	text-align: center;
+	img {
+	    display: inline;
+	    max-height: 100%;
+	    max-width: 100%;
+	}
+}
+.header-container{	
+	width: 100%;	
+	position: relative;
+	top:0;
+	overflow: hidden;
+	height: 80px;
+	padding:10px 4%;
+	// text-transform: uppercase;
+	// border-bottom: 2px solid red;
+	.header-logo{
+		@extend .logo-common;
+		// border: 1px solid;
+		float: left;	
+	}
+	.header-menu{
+		// border: 1px solid;
+		@extend .menu-common;
+		float:right;			
+	}
+}
+
+.e-section-seperator {
+    position: relative;
+    overflow: hidden;
+    top: -20px;
+    width: 90%;
+    height: 3px;
+    background: $separator;
+    margin: 0 auto;
+    // display: inline;
+}
+
