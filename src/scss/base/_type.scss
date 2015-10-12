@@ -1,9 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(http://fonts.googleapis.com/css?family=Mandali);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 $text-font  : 'WorkSans-Regular',sans-serif;
 $heading-font : 'WorkSans-SemiBold',sans-serif;
 
-$title-font : 'Mandali', sans-serif;
+$title-font : 'Roboto Light', sans-serif;
+$title-font1 : 'Roboto Medium', sans-serif;
+
 $body-font  : 'Lato', sans-serfif;
 
 // Settings for harmon
@@ -38,7 +40,7 @@ $ratio: $perfect-fourth;
 
 .giant-text {
     font-size: scale( 4 );
-    font-family: $title-font;
+    font-family: $title-font1;
 }
 .very-giant-text {
     font-size: scale( 5 );
@@ -46,4 +48,11 @@ $ratio: $perfect-fourth;
 }
 * {
     box-sizing:border-box;
+    font-family: $title-font;
+}
+
+body{
+	font-family: $title-font;
+    font-weight: 400;
+    line-height: scale( 2, unitless );
 }

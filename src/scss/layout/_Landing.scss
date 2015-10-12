@@ -3,7 +3,7 @@
 	position: relative;
 	top:0;
 	overflow: hidden;
-	height: 80px;
+	height: 100px;
 	padding:10px 4%;
 	// text-transform: uppercase;
 	// border-bottom: 2px solid red;
@@ -15,6 +15,7 @@
 	.header-menu{
 		// border: 1px solid;
 		@extend .menu-common;
+		@extend .normal-text;
 		float:right;			
 	}
 }
@@ -23,12 +24,19 @@
 .main-section{
 	position: relative;
 	overflow: hidden;
-	height: 100%;
+	height: 85%;
+	// border: 1px solid;
 	.image-container{		
 		width: 400px;
-		height: 55%;
+		height: 65%;
 		text-align: center;
 		margin: auto;
+		// border:1px dashed;
+		// .banner { width :100%;
+		// 	height: 100%;
+		// 	position: relative; overflow: hidden; border:1px solid;}
+	 //    .banner li { list-style: none;}
+	 //    .banner ul li { float: left; }
 		img {			
 		    display: inline;
 		    max-height: 100%;
@@ -40,14 +48,22 @@
 		// border: 1px solid;
 		width: 300px;	
 		margin: auto;
-		margin-top: -30px;
+		margin-top: 40px;
 		text-align: center;
+		font-weight: 100;
 	}
 	.icon-text{
-		height: 150px;
-		width: 70%;
+		height: 100px;
+		@include media( '<=750px' ) {
+			width: 80%;
+		}
+		@include media( '>=750px' ) {
+			width: 60%;
+		}
+		
 		margin: auto;
-		margin-top: 30px;
+		// margin-top: 30px;
+		// border: 1px solid;
 		.icon-container{
 			width: 33%;
 			height: 70%;
@@ -55,8 +71,16 @@
 			.icon-image-container{
 				margin: auto;
 				// border: 1px dashed;
-				width: 150px;
-				height: 100%;
+				
+				@include media( '<=750px' ) {
+					// width:;
+					height: 80%;
+				}
+				@include media( '>=750px' ) {
+					// width: 60%;
+					width: 150px;
+					height: 100%;
+				}
 				text-align: center;
 				img {
 					opacity: 0.4;
@@ -66,7 +90,7 @@
 				}
 			}
 			.icon-text-container{				
-				@extend .big-text;
+				@extend .normal-text;
 				color:$header-menu-color;
 				height: 30%;
 				text-align: center;
@@ -89,9 +113,10 @@
 		width: 100%;
 		height:100%;
 		// border: 1px solid;
-		// background-image: url("../../Images/Philips_Hue_1.jpg");
+		background-image: url("../../Images/Philips_Hue_1.jpg");
 		background-size:100% auto;
 	  	background-repeat: no-repeat;
+	  	background-position: bottom;
 	}
 	.lg-text1{
 		@extend .very-big-text;
@@ -99,13 +124,13 @@
 		// height: 5%;
 		// border: 1px solid;
 		line-height: 0;
-		margin-top:20px;
+		// margin-top:20px;
 	}
 	.lg-text2{
 		@extend .giant-text;
 		color: $white;
 		padding-left: 30px;
-		margin-top:20px;
+		// margin-top:20px;
 		line-height: .7;		
 	}
 	.lg-content{
@@ -118,37 +143,48 @@
 	}
 	.lg-image{
 		position: absolute;
-		left: 10px;
-		width: 200px;
-		border: 1px solid;
+		overflow: hidden;
+		left: 70%;
+		// bottom: 70%;
+		top :50%;
+		width: 300px;
+		// border: 1px solid;
 		img{
 			max-width: 100%;
 			max-height: 100%;
 		}
 	}
 }
-.is-heading{
-	padding-left: 30px;
+.is-heading{	
 	padding-top:  20px;
 	.is-part1{
-		@extend .huge-text;
+		@extend .very-big-text;
+		padding-left: 50px;
 		line-height: 0;
+		opacity: .8;
+		font-weight: 100;
 	}
 	.is-part2{
 		@extend .very-giant-text;
 		color:$header-menu-color;
 		line-height: 0;
+		// border: 1px solid;
+		// 
+		padding-left: 45px;
+		margin-top:50px;
 	}		
 }
 .installation-section{
 	height: 90%;
 	.is-image{
+		// border: 1px solid;
 		position: absolute;
 		overflow: hidden;
 		width: 100%;
 		text-align: center;
 		margin: auto;
-		img {			
+		img {
+			padding: 40px;			
 		    display: inline;
 		    max-height: 100%;
 		    max-width: 100%;
@@ -157,9 +193,18 @@
 	}
 }
 .feature-section{
-	width: 60%;
+	// height: 100%;
+	@include media( '<=800px' ) {
+		// width:;
+		width: 85%;
+	}
+	@include media( '>=800px' ) {
+		width: 65%;
+	}
+	
 	margin:auto;
 	margin-bottom: 50px;
+	// border: 1px solid;
 	.fs-image-text{
 		.fs-image-container{
 			width: 45%;
@@ -185,66 +230,141 @@
 }
 
 .lite-image-icon{
-	width: 70%;
+	@include media( '<750px' ) {	
+		width: 90%;
+	}
+	@include media( '>=750px','<=900px' ) {	
+		width: 80%;
+	}
+	@include media( '>=900px' ) {
+		width: 70%;
+	}
+	
 	// border: 1px solid;
 	height: 85%;
 	margin: auto;
 	.lite-image-container{
-		float: left;
-		width: 40%;
-		height: inherit;
-		// border: 1px dashed;
-		padding: 10px;
-		img{
-			max-width: 100%;
-			max-height: 100%;
-			text-align: center;
-			display: block;
-		    margin-left: auto;
-		    margin-right: auto
+		@include media( '>=750px' ) {	
+			float: left;
+			width: 40%;
+			height: inherit;
+			// border: 1px dashed;
+			padding: 10px;
+			img{
+				max-width: 100%;
+				max-height: 100%;
+				text-align: center;
+				display: block;
+			    margin-left: auto;
+			    margin-right: auto
+			}
 		}
+		@include media( '<750px' ) 
+		{
+			width: 400px;
+			height: 65%;
+			text-align: center;
+			margin: auto;
+			// border:1px dashed;
+			// .banner { width :100%;
+			// 	height: 100%;
+			// 	position: relative; overflow: hidden; border:1px solid;}
+		 //    .banner li { list-style: none;}
+		 //    .banner ul li { float: left; }
+			img {			
+			    display: inline;
+			    max-height: 100%;
+			    max-width: 100%;
+			}
+		}
+		
 	}
 	.lite-icon-container{
-		float: right;
-		width: 60%;
-		// height: 33%;
-		height: inherit;
-		// border: 1px dashed;
-		.test{
-			width: 70%;
-			height: 60%;
-			// border: 1px solid;
-			// margin: auto;
-			margin: 17% 0 0 30%;
-			// border: 1px solid red;
-			.icon-container{
-				height: 25%;
-				width: 30%;																																									
+		.text-container{
+			@extend .normal-text;
+			color: $header-menu-color;
+		}
+		@include media( '>=750px' )
+		{
+			float: right;
+			width: 60%;
+			// height: 33%;
+			height: inherit;
+			// border: 1px dashed;
+			.test{
+				width: 70%;
+				height: 60%;
 				// border: 1px solid;
-				float: left;
-				margin-bottom: 50px;
-				img{
-					opacity: 0.4;
-					max-width: 100%;
-					max-height: 100%;
-					text-align: center;
-					display: block;
-				    margin-left: auto;
-				    margin-right: auto
+				// margin: auto;
+				margin: 17% 0 0 30%;
+				// border: 1px solid red;
+				.icon-container{
+					height: 25%;
+					width: 30%;																																									
+					// border: 1px solid;
+					float: left;
+					margin-bottom: 50px;
+					img{
+						opacity: 0.4;
+						max-width: 100%;
+						max-height: 100%;
+						text-align: center;
+						display: block;
+					    margin-left: auto;
+					    margin-right: auto
+					}
+				}
+				.text-container{
+					float: left;
+					width: 70%;
+					height: 25%;
+					padding-top: 25px;
+					margin-bottom: 50px;					
 				}
 			}
-			.text-container{
-				@extend .normal-text;
-				color: $header-menu-color;
-				float: left;
-				width: 70%;
-				height: 25%;
-				padding-top: 25px;
-				margin-bottom: 50px;
-				// border: 1px dashed;	
-				
-			}
 		}
+		@include media( '<750px' )
+		{
+			.test{
+				height: 100px;
+				width: 90%;				
+				margin: auto;
+				margin-top: 10px;
+				// border: 1px dashed;
+				.icon-image-container{
+					width: 33%;
+					height: 70%;
+					float: left;
+					// border: 1px solid;
+					.icon-container{
+						margin: auto;
+						// border: 1px dashed;
+						text-align: center;
+						img {
+							opacity: 0.4;
+						    display: inline;
+						    max-height: 100%;
+						    max-width: 100%;
+						}
+						@include media( '<=750px' ) {
+							// width:;
+							height: 80%;
+						}
+						@include media( '>=750px' ) {
+							// width: 60%;
+							width: 150px;
+							height: 100%;
+						}						
+					}
+					.text-container{				
+						height: 30%;
+						text-align: center;
+						padding: 0;				
+					}
+				}
+			}
+			
+		}		
 	}
 }
 
@@ -262,13 +382,29 @@
 		height: 100%;
 	}
 	.fs-icon-text{
-		width: 16.5%;
+		
+		@include media( '<600px' ) {	
+			// height: 40%;
+			width: 50%;
+		}
+		@include media( '>=600px' ) {	
+			width: 16.5%;
+		}
 		height: 100%;
 		// border: 1px dashed;
 		float: left;
 	}
 	.icon-container{
-		height: 75%;
+		@include media( '<750px' ) {	
+			height: 40%;
+		}
+		@include media( '>=750px','<=900px' ) {	
+			height: 60%;
+		}
+		@include media( '>=900px' ) {
+			height: 75%;
+		}
+		
 		width: 100%;																																									
 		// border: 1px solid red;
 		float: left;
@@ -276,13 +412,21 @@
 		// margin-bottom: 50px;
 		img{
 			opacity: 0.4;
-			padding: 25px;
+			
 			max-width: 100%;
 			max-height: 100%;
 			text-align: center;
 			display: block;
 		    margin-left: auto;
-		    margin-right: auto
+		    margin-right: auto;
+		    @include media( '<=950px' ) {	
+				// height: 60%;
+				padding: 15px;
+			}
+			@include media( '>=950px' ) {
+				// height: 75%;
+				padding: 30px;
+			}
 		}
 	}
 	.text-container{
@@ -294,6 +438,7 @@
 		width: 100%;
 		float: left;
 		padding-top: 20px;
+		
 	}
 }
 
@@ -312,7 +457,16 @@
 		height: 100%;
 	}
 	.fs-icon-text{
-		width: 25%;
+		@include media( '<600px' ) {	
+			// height: 40%;
+			width: 50%;
+			margin-bottom: 20px;
+		}
+		@include media( '>=600px' ) {	
+			// width: 16.5%;
+			width: 25%;
+		}
+		
 		height: 100%;
 		// border: 1px dashed;
 		float: left;
@@ -332,6 +486,9 @@
 		    margin-left: auto;
 		    margin-right: auto
 		}
+	}
+	.e-marginAdjust{
+		margin-top: -20px;
 	}
 }
 
@@ -354,20 +511,16 @@
 	.footer-menu{
 		height: 100%;
 		float: left;
-		width: 70%;
-		// border: 1px solid;
-		// @extend .menu-common;
-		// // @extend .normal-text;
-		// li{
-		// 	// width: 33%;
-		// 	// float: left;
-		// 	// text-align: left;
-		// 	// padding-left: 5%;
-		// 	// letter-spacing: .7;
-		// }
-		// a{
-		// 	color:black;
-		// }
+		
+		@include media( '<600px' ) {	
+			// height: 40%;
+			width: 70%;
+			// margin-bottom: 20px;
+		}
+		@include media( '>=600px' ) {	
+			// width: 16.5%;
+			width: 60%;
+		}
 	}
 	.fm-container{
 		height: 100%;
@@ -381,45 +534,54 @@
 		li{
 			@extend .menu-common;
 			padding: 5% 0 2% 15%;
-			// @extend .normal-text;
+			@extend .normal-text;
 			color:black;
 			display: block;
 			line-height: 1;
 			// border: 1px solid;
-			letter-spacing: 1;
+			// letter-spacing: 1;
 		}	
 	}
 	.footer-download{
 
 		height: 100%;
 		float: left;
-		width: 30%;
-		// border: 1px dashed;
 		
-		.download{
-			width: 100%;
-			height: 50%;
-			// border: 1px solid;
-			li{
-				width: 80%;
-				@extend .menu-common;
-				float: right;
-				text-align: left;
-				padding-right: 15%;
-				letter-spacing: .7;
-				// border: 1px solid;
-				color: black;
-				// vertical-align: middle;
-			}
+		@include media( '<600px' ) {	
+			width: 30%;			
 		}
-		.e-download1{
+		@include media( '>=600px' ) {	
+			width: 40%;
+		}
+		color: black;
+		// border: 1px dashed;
+		.footer-container{
+			padding-top: 5%;
+			width: 60%;
+			margin: auto;
+			height: 100%;
+			// border: 1px solid red;
+			a{
+				color:black;
+				text-decoration: none;
+			}
 			li{
-				margin-top: 10%;
+				// border: 1px dashed;
+				@extend .menu-common;
+				@extend .normal-text;
+				line-height: 1;
+				text-align: right;
+				color: black;
+				display: block;
+				@include media( '<600px' ) {	
+					padding: 10% 0 0 0;		
+				}
+				@include media( '>=600px' ) {	
+					padding: 5% 0 0 0;
+				}
+				
 			}
 		}		
-		a{
-			color:black;
-		}
 	}
 }
 

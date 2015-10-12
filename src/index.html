@@ -5,7 +5,7 @@
    <script src="js/compiled/libs.js"></script> 
   <script type="text/javascript" src = "js/libs/jquery.js"></script>
   <script src="/js/libs/jquery.fitvids.js"></script>  
-  
+  <script src="//unslider.com/unslider.min.js"></script>
 </head>
 <body> 
 <header class = "header-container">
@@ -27,6 +27,11 @@
 <div class = "main-section">
 	<div class="image-container">
 	  <img src="/images/pic1.jpg" alt="/images/pic1">
+	  <!-- <ul>
+	        <li><img src="/images/pic1.jpg" alt="/images/pic1"></li>
+	        <li><img src="/images/pic1.jpg" alt="/images/pic1"></li>
+	        <li><img src="/images/pic1.jpg" alt="/images/pic1"></li>
+	    </ul> -->
 	</div>
 	<div class="main-section-heading">
 		The Smart Light Is Here
@@ -58,15 +63,18 @@
 		</div>
 	</div>
 </div>
-<div class="e-page-seperator"></div>
+<!-- <div class="e-page-seperator"></div> -->
 	<div class="lighting-section">
-		<p class = "lg-text1">Experience</p>
+		<!-- <div class="lg-heading"> -->
+			<p class = "lg-text1">Experience</p>
+		<!-- </div> -->
+		
 		<div class="background-image-section">
 			<p class ="lg-text2">Amazing Lighting</p>
 			<p class = "lg-content">16 Million color,music sync with your sleep cycles,<br>ambience settings are some of the key features<br>we want our product experience<br>to speak for themselves.<br>Young professionals and students<br>who are the early adopters of tech products.</p>
-			<!-- <div class = "lg-image">
-				<img src="/images/easybulb-new-app.jpg" alt="">
-			</div> -->
+			<div class = "lg-image">
+				<img src="/images/easybulb-new-app.png" alt="">
+			</div>
 		</div>
 	</div>
 </div>
@@ -120,7 +128,7 @@
 				<img class = "" src="/images/Icons/noun_124870_cc.png" alt="">
 			</div>
 			<div class="text-container">
-				<strong>Proximity Sensor</strong>
+				Proximity Sensor
 			</div>
 		</div>
 		<div class="fs-icon-text">
@@ -128,7 +136,7 @@
 				<img class = "" src="/images/Icons/noun_145436_cc.png" alt="">
 			</div>
 			<div class="text-container">
-				<strong>Dimmable</strong>
+				Dimmable
 			</div>
 		</div>
 		<div class="fs-icon-text">
@@ -136,7 +144,7 @@
 				<img class = "" src="/images/Icons/noun_79974_cc.png" alt="">
 			</div>
 			<div class="text-container">
-				<strong>Energy Efficient</strong>
+				Energy Efficient
 			</div>
 		</div>
 		<div class="fs-icon-text">
@@ -144,7 +152,7 @@
 				<img class = "" src="/images/Icons/noun_16313_cc.png" alt="">
 			</div>
 			<div class="text-container">
-				<strong>Long Life</strong>
+				Long Life
 			</div>
 		</div>
 		<div class="fs-icon-text">
@@ -152,7 +160,7 @@
 				<img class = "" src="/images/Icons/noun_6731_cc.png" alt="">
 			</div>
 			<div class="text-container">
-				<strong>Connects upto 10 Bulbs</strong>
+				Connects upto 10 Bulbs
 			</div>
 		</div>
 		<div class="fs-icon-text">
@@ -160,7 +168,7 @@
 				<img class = "" src="/images/Icons/noun_175898_cc.png" alt="">
 			</div>
 			<div class="text-container">
-				<strong>Scheduling</strong>
+				Scheduling
 			</div>
 		</div>
 	</div>
@@ -179,23 +187,29 @@
 		</div>
 		<div class="lite-icon-container">
 			<div class="test">
-				<div class="icon-container">
-					<img class = "" src="/images/Icons/noun_150154_cc.png" alt="">
-				</div>	
-				<div class="text-container">
-					BLE( Bluetooth 4.0 Low Energy)
+				<div class="icon-image-container">
+					<div class="icon-container">
+						<img class = "" src="/images/Icons/noun_150154_cc.png" alt="">
+					</div>	
+					<div class="text-container">
+						BLE( Bluetooth 4.0 Low Energy)
+					</div>
 				</div>
-				<div class="icon-container">
-					<img class = "" src="/images/Icons/noun_120701_cc.png" alt="">
-				</div>	
-				<div class="text-container">
-					Toshiba LED
+				<div class="icon-image-container">
+					<div class="icon-container">
+						<img class = "" src="/images/Icons/noun_120701_cc.png" alt="">
+					</div>	
+					<div class="text-container">
+						Toshiba LED
+					</div>
 				</div>
-				<div class="icon-container">
-					<img class = "" src="/images/Icons/noun_87581_cc.png" alt="">
-				</div>	
-				<div class="text-container">
-					Texas Instruments
+				<div class="icon-image-container">
+					<div class="icon-container">
+						<img class = "" src="/images/Icons/noun_87581_cc.png" alt="">
+					</div>	
+					<div class="text-container">
+						Texas Instruments
+					</div>
 				</div>
 			</div>			
 		</div>		
@@ -230,7 +244,7 @@
 			</div> -->
 		</div>
 		<div class="fs-icon-text">
-			<div class="icon-container">
+			<div class="icon-container e-marginAdjust">
 				<img class = "" src="/images/Inc.png" alt="">
 			</div>
 			<!-- <div class="text-container">
@@ -273,13 +287,15 @@
 			<a href="#"><li>Contact Us</li></a> -->
 		</nav>
 		<div class="footer-download">
-			<div class="download e-download1">
-				<a href="/products.html"><li><strong>Download User Manual</strong></li></a>
-			</div>
-			
-			<div class="download e-download2">
-				<a href="/products.html"><li><strong>Download Press Kit</strong></li></a>
-			</div>
+			<div class ="footer-container">
+				<div class="download e-download1">
+					<a href="/products.html"><li><strong>Download User Manual</strong></li></a>
+				</div>
+				
+				<div class="download e-download2">
+					<a href="/products.html"><li><strong>Download Press Kit</strong></li></a>
+				</div>
+			</div>			
 		</div>
 	</div>
 </footer>
