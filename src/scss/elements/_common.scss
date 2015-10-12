@@ -27,3 +27,25 @@
 	    max-width: 100%;
 	}
 }
+
+.e-section-seperator {
+    position: relative;
+    overflow: hidden;
+    top: -20px;
+    width: 90%;
+    height: 3px;
+    background: $separator;
+    margin: 0 auto;
+    // display: inline;
+}
+
+.e-page-seperator {
+    position: relative;
+    overflow: hidden;
+    margin: 50px 0;
+    width: 10%;
+    height: 5px;
+    background: $separator;
+    margin: 0 auto;
+    display: none;
+}
