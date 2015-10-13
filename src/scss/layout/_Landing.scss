@@ -118,7 +118,7 @@
 	max-height: 100%;
 	// margin-top: 5%;
 	// border: 1px solid;
-	
+
 	img{
 		max-width: 100%;
 		min-height: 100%;
@@ -131,7 +131,7 @@
 // overflow: auto;
 		top:-30px;
 		padding-left: 30px;
-		
+
 		.is-text2{
 			// color:red;
 			@extend .giant-text;
@@ -174,7 +174,7 @@
 		// @include media( '>=1000px' ) {
 		// 	width: 275px;
 		// }
-		
+
 		// border: 1px solid;
 		img{
 			max-width: 100%;
@@ -223,16 +223,11 @@
 		}
 	}
 }
-.fs-image-container-blur{
-	display: none;
-	position: absolute;
-	top:0;
-	right: 0;
-}
 
 .feature-section{
+	overflow: hidden;
 	// height: 100%;
-	
+
 	@include media( '<=800px' ) {
 		// width:;
 		width: 85%;
@@ -245,38 +240,99 @@
 	margin-bottom: 50px;
 	// border: 1px solid;
 
-	.fs-image-text{
-		overflow: hidden;
-		position: relative;
-		width: 45%;
+	.fs-image {
 		float: left;
-		margin:0 2.5% 2% 0;
-		// border: 1px dashed;
+		width: 49%;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 2%;
+		cursor: pointer;
+		height: 260px;
+		background-sie: cover;
+
+		.fs-image-text{
+			z-index: 2;
+			position: absolute;
+			top:0;
+			left: 0;
+			padding: 10px 0 0 15px;
+			display: none;
+			color: white;
+			font-size: 14px;
+		}
+
+		.fs-image-container-blur{
+			z-index: 1;
+			display: none;
+			position: absolute;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
 		.fs-image-container{
+			z-index: 0;
 			position: relative;
 			width: 100%;
 			height: inherit;
-
 			float: left;
-			.fs-row1col1{
-				margin: 2% 0 0 0;
-			}
 		}
+
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.fs-img-1 {
+			background: url("/images/feature1.jpg");
+		}
+		.fs-img-1b {
+			background: url("/images/feature1-blur.jpg");
+		}
+
+		.fs-img-2 {
+			background: url("/images/feature2.jpg");
+		}
+		.fs-img-2b {
+			background: url("/images/feature1-blur.jpg");
+		}
+
+		.fs-img-3 {
+			background: url("/images/feature3.jpg");
+		}
+		.fs-img-3b {
+			background: url("/images/feature1-blur.jpg");
+		}
+
+		.fs-img-4 {
+			background: url("/images/feature4.jpg");
+		}
+		.fs-img-4b {
+			background: url("/images/feature1-blur.jpg");
+		}
+
 		&:hover{
 			.fs-image-container-blur{
 				display: block;
 			}
+			.fs-image-text {
+				display: block;
+			}
 		}
-		img{
-			max-width: 100%;
-			max-height: 100%;
-			text-align: center;
-			display: block;
-		    margin-left: auto;
-		    margin-right: auto
-		}
-
 	}
+
+	.fs-image-right {
+		margin-left: 2%;
+	}
+
+	.fs-image-center {
+		float: none;
+		margin: 0 auto;
+	}
+
+
+
 	.fullWidth{
 		// border:1px solid red;
 		// height: inherit;

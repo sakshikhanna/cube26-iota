@@ -3,4 +3,6 @@ node_modules
 src/css
 src/js/compiled
 .grunt
+.DS_Store
+src/.DS_Store
 
