@@ -2,20 +2,30 @@
 	position: relative;;
 	overflow: hidden;
 	cursor: pointer;
-	color: $header-menu-color;
+	// color: black ;
 	// @extend .normal-text;
-	a{
-		text-decoration: none;
-	}
+	// a{
+	// 	text-decoration: none;
+	// }
 	li{
 		display: inline-block;
 		padding:  20px 30px;
 		// padding-left: 30px;
+		color: $light-black ;
 		vertical-align: middle;
 		&:hover{
-			color : darken( $header-menu-color , 20%);
+			color : darken( $light-black , 40%);
 		}
+		a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
 	}
+
 }
 .logo-common{
 	width: 150px;
