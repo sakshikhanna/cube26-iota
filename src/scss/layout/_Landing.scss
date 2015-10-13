@@ -180,7 +180,7 @@
 		@include media( '>900px' ) {
 			margin-top: -25%;
 		}
-		
+
 	}
 	.is-text{
 		position: absolute;
@@ -203,7 +203,7 @@
 	.lg-content{
 		overflow: hidden;
 		position: absolute;
-		
+
 
 		// left:;
 		right: 0;
@@ -327,7 +327,7 @@
 		overflow: hidden;
 		margin-bottom: 2%;
 		cursor: pointer;
-		height: 260px;
+		height: 240px;
 
 		.fs-image-text{
 			z-index: 2;
@@ -366,31 +366,31 @@
 		}
 
 		.fs-img-1 {
-			background: url("/images/feature1.jpg");
+			background: url("/images/fs/1.png");
 		}
 		.fs-img-1b {
-			background: url("/images/feature1-blur.jpg");
+			background: url("/images/fs/b1.png");
 		}
 
 		.fs-img-2 {
-			background: url("/images/feature2.jpg");
+			background: url("/images/fs/2.png");
 		}
 		.fs-img-2b {
-			background: url("/images/feature2-blur.jpg");
+			background: url("/images/fs/b2.png");
 		}
 
 		.fs-img-3 {
-			background: url("/images/feature3.jpg");
+			background: url("/images/fs/3.png");
 		}
 		.fs-img-3b {
-			background: url("/images/feature3-blur.jpg");
+			background: url("/images/fs/b3.png");
 		}
 
 		.fs-img-4 {
-			background: url("/images/feature4.jpg");
+			background: url("/images/fs/4.png");
 		}
 		.fs-img-4b {
-			background: url("/images/feature1-blur.jpg");
+			background: url("/images/fs/b4.png");
 		}
 
 		&:hover{
@@ -404,7 +404,7 @@
 
 		@include media( '<=800px' ) {
 			width: 100%;
-			height: 300px;
+			height: 240px;
 			float: none;
 			margin: 0 auto 20px auto;
 			.fs-image-text {
@@ -429,7 +429,7 @@
 		margin: 0 auto;
 	}
 
-	@include media( '>=800px' ) {
+	@include media( '<=800px' ) {
 		.fs-image-right, .fs-image-center {
 			float: none;
 			margin: 0 auto 20px auto;
@@ -612,7 +612,7 @@
 		margin: auto;
 		@include media( '<800px' ) {
 			height: 40%;
-		}		
+		}
 		@include media( '>=800px' ) {
 			height: 60%;
 		}
