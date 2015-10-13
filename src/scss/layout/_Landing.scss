@@ -190,13 +190,15 @@
 		padding-left: 30px;
 		
 		.is-text2{
-			// color:red;
 			@extend .giant-text;
 			color: $white;
-			// padding-left: 30px;
-			// margin-top:20px;
 			line-height: 0;
-			// margin-top: 20px;
+			@include media( '<750px' ) {
+				// top:-10px;
+				padding-top: 15px;
+				font-size: scale( 2 );
+    			font-family: $title-font;
+			}
 		}
 	}
 	.lg-content{
@@ -214,7 +216,7 @@
 		letter-spacing: 1;
 		@include media( '<750px' ) {
 			line-height: 1.2;
-			width: 50%;
+			width: 60%;
 		}
 		@include media('>=750px', '<900px' ) {
 			line-height: 1.2;
@@ -229,17 +231,15 @@
 
 		position: absolute;
 		overflow: hidden;
-		// top:0;
-		// left: 70%;
-		right: 50px;
-		// bottom: 70%;
-		// top:0%;
 		bottom: 0;
-		width: 25%;
 		@include media( '<750px' ) {
 			width: 20%;
+			left:10px;
 		}
-		
+		@include media( '>=750px' ) {
+			width: 25%;
+			right: 50px;
+		}
 		// border: 1px solid;
 		img{
 			max-width: 100%;
@@ -691,6 +691,7 @@
 			a{
 				color:black;
 				text-decoration: none;
+				outline: none;
 			}
 			li{
 				// border: 1px dashed;
