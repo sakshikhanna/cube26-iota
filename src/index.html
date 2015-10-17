@@ -8,6 +8,9 @@
   <script type="text/javascript" src = "js/libs/jquery.js"></script>
   <script src="/js/libs/jquery.fitvids.js"></script>
   <script src="/js/libs/unslider.js"></script>
+  <script src="/js/libs/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="/css/jquery.bxslider.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
    
    
@@ -47,16 +50,25 @@
 <div class = "main-section">
 	<div class="image-container">
 		
-		<div class="banner">
+  <ul class="bxslider">
+		    	<li>
+		    	  <iframe src="http://player.vimeo.com/video/17914974" width="800" height="200" frameborder="0" ></iframe>
+		    	  </li>
+		        <li><img src="images/feature1.jpg" /></li>
+			<li><img src="images/feature2.jpg" /></li>
+			
+		    
+</ul>
+		<!-- <div class="banner">
 		    <ul>
-		    	<!-- <li>
+		    	<li>
 		    	    <iframe src="images/vedio1.mp4" width="800" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-		    	  </li> -->
+		    	  </li>
 		        <li><img src="images/feature1.jpg" /></li>
 			<li><img src="images/feature2.jpg" /></li>
 			
 		    </ul>
-		</div>
+		</div> -->
 	
 	</div>
 	<div class="main-section-heading">
@@ -95,12 +107,21 @@
 </div>
 <div class="lighting-section1">
 	<div class="is-image">
-		<img src="/Images/Philips_Hue_1.jpg" alt="">
+		<img src="/Images/Philips_Hue_1.jpg"
+		data-swap="/Images/Philips_Hue_1_pink.jpg" class = "bg"alt="">
+	</div>
+	<div class="color-img-container">
+		<div class="color-img color1"></div>
+		<div class="color-img color2"></div>
+		<!-- <div class="color-img color3"></div> -->
+		<div class="color-img color4"></div>
+		<div class="color-img color5"></div>
 	</div>
 	<div class="is-text">
 		<p class="is-text2">Amazing Lighting</p>
 	</div>
 	<p class = "lg-content">16 Million color,music sync with your sleep cycles,ambience settings are some of the key features we want our product experience to speak for themselves.Young professionals and students who are the early adopters of tech products.</p>
+	
 	<div class = "lg-image">
 		<img src="/images/easybulb-new-app.png" alt="">
 	</div>
