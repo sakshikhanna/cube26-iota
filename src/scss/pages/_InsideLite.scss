@@ -1,5 +1,5 @@
 .IL-main-section{
-	margin:3% 5% 0 5%;
+	margin:3% 5% 5% 5%;
 	// border:1px solid;
 	position: relative;
 	overflow: hidden;
@@ -34,41 +34,80 @@
     background: $separator;
 }
 
+.prop-heading{
+	// border: 1px dashed;
+	@extend .big-text;
+	color:$black-text;
+	letter-spacing: .5;
+}
+.prop-text-container{
+	width: 80%;
+	height: 50%;
+	// border: 1px solid;
+}
+.prop-row{
+	@extend .normal-text;
+	width: 90%;
+	line-height: 1.5;
+	letter-spacing: .5;
+	color:$black-text;
+	.prop-left{
+		width: 40%;
+		float: left;
+	}
+	.prop-right{
+		width: 60%;
+		float: left;
+	}
+	.prop-left1{
+		width: 50%;
+		float: left;
+	}
+	.prop-right1{
+		width: 50%;
+		float: left;
+	}
+	@include media( '<500px' ) {
+		font-size: scale( -1 );
+	}
+}
+
 .general-properties{
 	margin:0 5%;
-	// border: 1px solid;
-	height: 50%;
+	height: 40%;
 	width: 50%;
-
 	line-height: 0;
-	.prop-heading{
-		// border: 1px dashed;
-		@extend .big-text;
-		color:$black-text;
-		letter-spacing: .5;
+	@include media( '<800px' ) {
+		height: 30%;
+		width: 100%;
 	}
-	.prop-text-container{
-		width: 80%;
-		height: 50%;
-		// border: 1px solid;
+}
+.perf-comm-properties{
+	margin:0 5%;
+	height: 50%;
+	line-height: 0;
+	@include media( '<800px' ) {
+		height: 40%;
+		width: 100%;
 	}
-	.prop-row{
-		@extend .normal-text;
-		// border: 1px solid;
-		width: 90%;
-		// height: 10%;
-		line-height: 1.5;
-		letter-spacing: .5;
-		color:$black-text;
-		.prop-left{
-			width: 40%;
-			float: left;
-			// border: 1px dashed red;
+	.performance-prop{
+		width: 50%;
+		height: 100%;
+		float: left;
+		// border: 1px solid blue;
+		@include media( '<800px' ) {
+			// height: 100%;
+			width: 100%;
 		}
-		.prop-right{
-			width: 60%;
-			float: left;
-			// border: 1px dashed blue;
+	}
+	.comm-prop{
+		width: 50%;
+		height: 100%;
+		float: left;
+		// border: 1px dashed;
+		@include media( '<800px' ) {
+			// height: 100%;
+			width: 100%;
 		}
 	}
 }
