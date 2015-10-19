@@ -1,9 +1,20 @@
 
 
 $( document ).ready( function(){
-   //for scrolling
-    // $('.banner').unslider();
-    // 
+   var dom = {
+    mainButton : '.js-mobile-nav-button',
+    navContainer : '.js-mobile-nav',
+    closeButton : '.js-mobile-nav-close'
+   }
+
+    $( dom.mainButton ).on( 'click', function() {
+        $( dom.navContainer ).toggleClass( 'isOpen' );
+    });
+
+    $( dom.closeButton ).on( 'click', function() {
+        $( dom.navContainer ).toggleClass( 'isOpen' );
+    });
+      
     $('.bxslider').bxSlider({
       speed:500,
       infiniteLoop:true,
@@ -21,24 +32,12 @@ $( document ).ready( function(){
     dots: true,               //  Display dot navigation
     fluid: false              //  Support responsive design. May break non-responsive designs
   });
-   var dom = {
-    mainButton : '.js-mobile-nav-button',
-    navContainer : '.js-mobile-nav',
-    closeButton : '.js-mobile-nav-close'
-   }
-
-    $( dom.mainButton ).on( 'click', function() {
-        $( dom.navContainer ).toggleClass( 'isOpen' );
-    });
-
-    $( dom.closeButton ).on( 'click', function() {
-        $( dom.navContainer ).toggleClass( 'isOpen' );
-    });
+  
 
 
-    $(function() {
-        $('.banner').unslider();
-    });
+    // $(function() {
+        // $('.banner').unslider();
+    // });
   
      // $(".color5").mouseover(function() { 
      //        $('.bg').attr("src","../../Images/Philips_Hue_1_pink.jpg");

@@ -1,0 +1,134 @@
+.footer-container{
+
+	.purpleline{
+		position: relative;
+	    overflow: hidden;
+	    width: 100%;
+	    height: 10px;
+	    background: $separator;
+	    margin: 0 auto;
+	}
+	.footer-section{
+		width: 100%;
+		height: 30%;
+		padding-top: 20px;
+		background-color: $light-grey;
+	}
+	.footer-menu{
+		height: 100%;
+		float: left;
+
+		@include media( '>=500px','<600px' ) {
+			// height: 40%;
+			width: 70%;
+			height: 100%;
+			// margin-bottom: 20px;
+		}
+		@include media( '>=600px' ) {
+			// width: 16.5%;
+			width: 60%;
+			height: 100%;
+		}
+		@include media( '<500px' ) {
+			// width: 16.5%;
+			width: 100%;
+			height: 60%;
+		}
+	}
+	.fm-container{
+		height: 100%;
+		width: 33%;
+		float: left;
+		text-align: left;
+		// border: 1px solid red;
+		a{
+			text-decoration: none;
+		}
+		li{
+			@extend .menu-common;
+			padding: 5% 0 2% 15%;
+			@extend .normal-text;
+			color:black;
+			display: block;
+			line-height: 1;
+			// border: 1px solid;
+			// letter-spacing: 1;
+		}
+		@include media( '<500px' ) {
+			li{
+				font-size: scale( -1 );
+			}			
+		}		
+		
+	}
+	.footer-download{
+		height: 100%;
+		float: left;
+		@include media( '>=500px','<600px' ) {
+			width: 30%;
+			height: 100%;
+		}
+		@include media( '>=600px' ) {
+			width: 40%;
+			height: 100%;
+		}
+		@include media( '<500px' ) {
+			// width: 16.5%;
+			width: 100%;
+			height: 40%;
+		}
+		color: black;
+		// border: 1px dashed;
+		.footer-container{
+			padding-top: 5%;
+			width: 60%;
+			margin: auto;
+			height: 100%;
+			// border: 1px solid red;
+			a{
+				color:black;
+				text-decoration: none;
+				outline: none;
+			}
+			li{
+				// border: 1px dashed;
+				@extend .menu-common;
+				@extend .normal-text;
+				line-height: 1;
+				text-align: right;
+				color: black;
+				display: block;
+				@include media( '<600px' ) {
+					padding: 10% 0 0 0;
+				}
+				@include media( '>=600px' ) {
+					padding: 5% 0 0 0;
+				}
+
+			}
+			@include media( '<500px' ) {
+				width: 100%;
+				.download{
+					width: 50%;
+					float: left;
+					li{
+						font-size: scale( -1 );
+						padding-right:30px; 
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.footer-logo{
+	float: right;
+	width: 150px;
+	height: 100px;
+	// border: 1px solid;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
