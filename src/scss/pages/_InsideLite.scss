@@ -21,6 +21,11 @@
 		}
 		@include media( '<500px' ) {
 			margin-top: 50px;
+
+		}
+		@include media( '<800px' ) {
+			margin-bottom: 10%;
+			margin-top: 10%;
 		}
 	}
 }
@@ -54,10 +59,16 @@
 	.prop-left{
 		width: 40%;
 		float: left;
+		@include media( '<800px' ) {
+			width: 50%;
+		}
 	}
 	.prop-right{
 		width: 60%;
 		float: left;
+		@include media( '<800px' ) {
+			width: 50%;
+		}
 	}
 	.prop-left1{
 		width: 50%;
@@ -80,15 +91,18 @@
 	@include media( '<800px' ) {
 		height: 30%;
 		width: 100%;
+		margin:0 10%;
 	}
 }
 .perf-comm-properties{
 	margin:0 5%;
 	height: 50%;
 	line-height: 0;
+	margin-bottom: 5%;
 	@include media( '<800px' ) {
 		height: 40%;
 		width: 100%;
+		margin:0 10%;
 	}
 	.performance-prop{
 		width: 50%;
