@@ -6,7 +6,8 @@
 	.ms-text{
 		@extend .normal-text;
 		font-family: $title-font;
-		color: $grey;
+		color: darken( $grey-download , 20%);
+		;
 		letter-spacing: .3;
 		text-align: center;
 	}
