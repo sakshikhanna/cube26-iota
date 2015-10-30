@@ -1,10 +1,14 @@
+.main-section-separator{
+    top:-10px;
+}
+
 .header-container{
 	width: 100%;
 	position: relative;
 	top:0;
 	overflow: hidden;
-	height: 100px;
-	padding:10px 4%;
+	height: 80px;
+	padding:5px 4%;
 	// text-transform: uppercase;
 	// border-bottom: 2px solid red;
 	.header-logo{
@@ -17,7 +21,7 @@
 		@extend .menu-common;
 		@extend .normal-text;
 		float:right;
-		font-weight: lighter;
+		font-weight: 300;
 		letter-spacing: .5
 	}
 	.header-collapsed-menu-icon {
