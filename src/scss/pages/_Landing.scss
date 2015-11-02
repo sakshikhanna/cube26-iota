@@ -607,25 +607,9 @@
 				display: none;
 			}
 		}
-
 		@include media( '<=600px' ) {
-			width: 100%;
-			height: 240px;
-			float: none;
-			// border: 1px solid;
-			margin: 0 auto 20px auto;
-			.fs-image-text-heading{
-				display: none;
-			}
-			.fs-image-container{
-				display: none;
-			}
-			.fs-image-container-blur{
-				display: block;
-			}
-
 			.fs-image-text {
-				display: block;
+				// display: block;
 				font-size: scale( -1 );
 				// font-size: 20px;
 				// padding: 20px 0 0 30px;
@@ -636,15 +620,45 @@
 				color: white;
 				text-align: left;
 			}
-			// &:hover {
-			// 	.fs-image-container{
-			// 		display: none;
-			// 	}
-			// 	.fs-image-container-blur{
-			// 		display: block;
-			// 	}
-			// }
+
 		}
+		// @include media( '<=600px' ) {
+		// 	width: 100%;
+		// 	height: 240px;
+		// 	float: none;
+		// 	// border: 1px solid;
+		// 	margin: 0 auto 20px auto;
+		// 	.fs-image-text-heading{
+		// 		display: none;
+		// 	}
+		// 	.fs-image-container{
+		// 		display: none;
+		// 	}
+		// 	.fs-image-container-blur{
+		// 		display: block;
+		// 	}
+
+		// 	.fs-image-text {
+		// 		display: block;
+		// 		font-size: scale( -1 );
+		// 		// font-size: 20px;
+		// 		// padding: 20px 0 0 30px;
+		// 	}
+		// 	.fs-text5{
+		// 		width: 70%;
+		// 		padding: 20px 200px 0 160px;
+		// 		color: white;
+		// 		text-align: left;
+		// 	}
+		// 	// &:hover {
+		// 	// 	.fs-image-container{
+		// 	// 		display: none;
+		// 	// 	}
+		// 	// 	.fs-image-container-blur{
+		// 	// 		display: block;
+		// 	// 	}
+		// 	// }
+		// }
 	}
 
 	.fs-image-right {

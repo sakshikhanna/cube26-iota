@@ -27,12 +27,40 @@
 	.header-collapsed-menu-icon {
         display: none;
     }
+    // .buyLink{
+    //     display: none;
+    // }
     @include media( '<=750px' ) {
 
         .header-menu {
             display: none;
         }
+        .buyLink{
+            display: block;
+            float: left;
+            padding-top: 5px;
+            font-size: scale( 0 );
+            line-height: 1;
+            text-align: center;
+            width:70px;
+            color: $light-black ;
+            &:hover{
+                color : darken( $light-black , 40%);
+                font-weight: 700;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+            // height: 50px;
+            // border: 1px solid;
+        }
         .header-collapsed-menu-icon {
+            // border:1px solid;
             float: right;
             display: block;
             // line-height: 60;
@@ -45,6 +73,7 @@
     }
 }
 .header-menu-mobile {
+    // border:1px solid;
     @extend .big-text;
     position: relative;
     overflow: hidden;
