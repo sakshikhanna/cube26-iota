@@ -1,38 +1,29 @@
-
-
 $( document ).ready( function(){
-   // var dom = {
-   //  mainButton : '.js-mobile-nav-button',
-   //  navContainer : '.js-mobile-nav',
-   //  closeButton : '.js-mobile-nav-close'
-   // }
-
-   //  $( dom.mainButton ).on( 'click', function() {
-   //      console.log('clicked');
-   //      $( dom.navContainer ).toggleClass( 'isOpen' );
-   //  });
-
-   //  $( dom.closeButton ).on( 'click', function() {
-   //      $( dom.navContainer ).toggleClass( 'isOpen' );
-   //  });
-      
-    $('.bxslider').bxSlider({
+  $('.bxslider').bxSlider({
       speed:500,
       infiniteLoop:true,
       hideControlOnEnd:true,
       auto:true,
-      // video: true,
+      video: true,
       useCSS: false, 
       controls:false,             //arrows are not shown
       autoHover:true,
       pager:false              //Dots are not displayed
 
     });
-  
-  
-
-
-   
+      
+    $('.btn-play').click(function(){
+      console.log('showing');
+      $('.videoContainer').addClass('show');
+      $( 'body' ).addClass('bodyClass');
+    })
+    $( '.video-close' ).on( 'click', function() {
+        $( '.videoContainer' ).addClass( 'hide' );
+         $( '.videoContainer' ).removeClass( 'show' );
+         $('.video')[0].pause();
+         $( 'body' ).removeClass('bodyClass');
+    });
+       
     // $('.color5').click(function(e){
     //     e.preventDefault();
     //      $('.bg').fadeOut(300, function() {

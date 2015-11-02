@@ -3,25 +3,33 @@
   <link rel="stylesheet" type="text/css" href="css/compiled.css">
 <!-- <link rel="shortcut icon" href="/images/favicon.ico">
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png"> -->
-   <script src="js/compiled/libs.js"></script>
+   <!-- // <script src="js/compiled/libs.js"></script> -->
 
   <script type="text/javascript" src = "js/libs/jquery.js"></script>
-  <script src="/js/libs/jquery.fitvids.js"></script>
-  <script src="/js/libs/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="/js/libs/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="/js/libs/jquery.bxslider.js"></script>
 <!-- bxSlider CSS file -->
 <link href="/css/jquery.bxslider.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
    
    
 <script src="js/libs/main.js"></script>
+<script src="js/libs/header.js"></script>
 <!-- <script src="js/libs/header.js"></script>		 -->
 
 
 </head>
 <body>
+<div class="videoContainer">
+	<video class="video" controls >
+		<source src="images/video.mp4" type="video/mp4">		  
+	</video>
+	
+	<i class="video-close ion-ios-close-outline video-close"></i>
+</div>
 <header class = "header-container">
 	<div class = "header-logo">
-		<img src="/images/bulb_logo.png" alt="">
+		<img src="images/bulb_logo.png" alt="">
 	</div>
 	<nav class="header-menu">
 	    <a href="/index.html"><li>Lite</li></a>
@@ -37,10 +45,11 @@
 </header>
 
 <nav class="header-menu-mobile js-mobile-nav">
+	<a href="#"><li>Buy</li></a>
     <a href="/index.html"><li>Lite</li></a>
     <a href="/InsideLite.html"><li>Inside Lite</li></a>
-    <a href="#"><li>Download</li></a>
-    <a href="#"><li>Buy</li></a>
+    <a href="/downloadApp.html"><li>Download</li></a>
+    
 
     <i class="header-menu-mobile-close ion-ios-close-outline js-mobile-nav-close"></i>
 </nav>
@@ -49,12 +58,12 @@
 <div class = "main-section">
 	<div class="image-container">		
 		<ul class="bxslider">
+			
 			<li><img src="images/slide1.jpg" /></li>
 			<li><img src="images/slide2.jpg" /></li>
 			<li class = "image3-cont"><img src="images/slide3.jpg" />
-				<img class = "btn-play" src="/images/Icons/play-button_318-42541.jpg" />
+				<img id = "video" class = "btn-play" src="/images/Icons/play-button_318-42541.jpg" />
 			</li>
-
 			<li><img src="images/slide4.jpg" /></li>
 		</ul>		
 	</div>
@@ -165,8 +174,16 @@
 				</div>
 			</div>	
 		</div>
+		<!-- askdkasjdkasjd -->
 	</div>
+	
 </div>
+<div class="know-more-heading">	
+	<a href="/InsideLite.html"><p>Know More</p></a>
+	
+	
+</div>
+
 <!-- <div class="e-section-seperator"></div> -->
 
 <div class="e-section-seperator"></div>
@@ -371,65 +388,17 @@
 		</div>
 	</div>
 </div>
-<div class="know-more-heading">	
+<!-- <div class="know-more-heading">	
 	Know More
-</div>
+</div> -->
 <div class="e-section-seperator"></div>
 
-
-<!-- <div class="insideLite-section">
-	<div class="is-heading">
-		<p class="is-part1">Inside</p>
-		<strong><p class="is-part2">The Lite</p></strong>
-	</div>
-	<div class="lite-image-icon">
-		<div class="lite-image-container">
-			<img class = "" src="/images/structure.jpg" alt="">
-		</div>
-		<div class="lite-icon-container">
-			<div class="test">
-				<div class="icon-image-container">
-
-					<div class="icon-container">
-						<img class = "" src="/images/Icons/noun_150154_cc.png" alt="">
-					</div>
-					<div class="text-container">
-						BLE( Bluetooth 4.0 Low Energy)
-					</div>
-				</div>
-			</div>
-			<div class="test">
-				<div class="icon-image-container">
-
-					<div class="icon-container">
-						<img class = "" src="/images/Icons/noun_120701_cc.png" alt="">
-					</div>
-					<div class="text-container">
-						Toshiba LED
-					</div>
-				</div>
-			</div>
-			<div class="test">
-				<div class="icon-image-container">
-
-					<div class="icon-container">
-						<img class = "" src="/images/Icons/noun_87581_cc.png" alt="">
-					</div>
-					<div class="text-container">
-						Texas Instruments
-					</div>
-				</div>
-			</div>	
-		</div>
-	</div>
-</div>
-<div class="e-section-seperator"></div>
- -->
+ 
 <div class="press-icons-section">
 	<div class="test1">
 		<div class="fs-icon-text">
 			<div class="icon-container">
-				<img class = "" src="/images/ndtv-gadget.png" alt="">
+				<a href="http://www.bgr.in/news/technology-startup-cube26-to-soon-launch-a-smartphone-controlled-smart-bulb/"><img class = "" src="/images/BGR.png" alt=""></a>
 			</div>
 			<!-- <div class="text-container">
 				<strong>Proximity Sensor</strong>
@@ -440,7 +409,7 @@
 		</div>
 		<div class="fs-icon-text">
 			<div class="icon-container">
-				<img class = "" src="/images/tc-techcrunch.png" alt="">
+				<a href="https://in.news.yahoo.com/cube26-enter-iot-space-144803108--finance.html"><img class = "" src="/images/yahoo.jpg" alt=""></a>
 			</div>
 			<!-- <div class="text-container">
 				<strong>Dimmable</strong>
@@ -451,7 +420,7 @@
 		</div>
 		<div class="fs-icon-text">
 			<div class="icon-container">
-				<img class = "" src="/images/YourStory_Media-Logo.png" alt="">
+				<a href="http://economictimes.indiatimes.com/small-biz/startups/cube26-to-hire-100-bets-big-on-internet-of-things-market/articleshow/49493326.cms"><img class = "" src="/images/Economic Times.png" alt=""></a>
 			</div>
 			<!-- <div class="text-container">
 				<strong>Energy Efficient</strong>
@@ -462,7 +431,7 @@
 		</div>
 		<div class="fs-icon-text">
 			<div class="icon-container e-marginAdjust">
-				<img class = "" src="/images/Inc.png" alt="">
+				<a href="http://www.business-standard.com/article/news-ians/cube26-to-enter-iot-space-115101501292_1.html"><img class = "" src="/images/BS.png" alt=""></a>
 			</div>
 			<!-- <div class="text-container">
 				<strong>Long Life</strong>
@@ -490,9 +459,9 @@
 			</div>
 			<div class="fm-container">
 				<a href="#"><li><strong>About</strong></li></a>
-				<a href="#"><li>IOTA</li></a>
-				<a href="#"><li>Privacy Policy</li></a>
-				<a href="#"><li>Contact Us</li></a>
+				<a href="/aboutUs.html#iota"><li>IOTA</li></a>
+				<a href="http://cube26.com/privacy.html"><li>Privacy Policy</li></a>
+				<a href="/aboutUs.html#contact-us"><li>Contact Us</li></a>
 			</div>			
 		</nav>
 		<div class="footer-download">
