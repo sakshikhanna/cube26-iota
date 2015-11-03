@@ -63,7 +63,7 @@
     pause: 4000,
     autoStart: true,
     autoDirection: 'next',
-    stopAutoOnClick: false,
+    stopAutoOnClick: true,
     autoHover: false,
     autoDelay: 0,
     autoSlideForOnePage: false,

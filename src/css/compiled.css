@@ -5,10 +5,10 @@
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
   MIT License: https://github.com/driftyco/ionicons
 
-  Android-style icons originally built by Googleâ€™s
+  Android-style icons originally built by GoogleΓÇÖs
   Material Design Icons: https://github.com/google/material-design-icons
   used under CC BY http://creativecommons.org/licenses/by/4.0/
-  Modified icons to fit ioniconâ€™s grid from original.
+  Modified icons to fit ioniconΓÇÖs grid from original.
 */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -4583,6 +4583,7 @@ body {
 .videoContainer .video {
   position: absolute;
   width: 60%;
+  height: 90%;
   top: 50px;
   left: 20%;
 }

@@ -1,5 +1,6 @@
 $( document ).ready( function(){
-  $('.bxslider').bxSlider({
+  
+var slider = $('.bxslider').bxSlider({
       speed:500,
       infiniteLoop:true,
       hideControlOnEnd:true,
@@ -8,19 +9,26 @@ $( document ).ready( function(){
       useCSS: false, 
       controls:false,             //arrows are not shown
       autoHover:true,
-      pager:false              //Dots are not displayed
+      pager:false ,
+      stopAutoOnClick:true             //Dots are not displayed
 
     });
+
+
       
     $('.btn-play').click(function(){
-      console.log('showing');
+      console.log('showing1111111');
       $('.videoContainer').addClass('show');
       $( 'body' ).addClass('bodyClass');
+      slider.stopAuto();
+      $('.videoContainer iframe').attr('src', 'https://www.youtube.com/embed/P6QIpEabg-U');
     })
     $( '.video-close' ).on( 'click', function() {
         $( '.videoContainer' ).addClass( 'hide' );
          $( '.videoContainer' ).removeClass( 'show' );
-         $('.video')[0].pause();
+         // $('.video')[0].pause();
+         $('.videoContainer iframe').attr('src', '');
+         // $('.youtubeplayer').stopVideo();
          $( 'body' ).removeClass('bodyClass');
     });
        
