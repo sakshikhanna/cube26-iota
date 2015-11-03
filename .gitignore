@@ -1,6 +1,5 @@
 node_modules
 .sass-cache
-src/css
 src/js/compiled
 .grunt
 .DS_Store
