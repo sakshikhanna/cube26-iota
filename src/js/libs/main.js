@@ -2,21 +2,24 @@ $( document ).ready( function(){
 
 // var slider = $('.bxslider').bxSlider({
 //       speed:500,
-//       infiniteLoop:true,
+//       // infiniteLoop:true,
 //       hideControlOnEnd:true,
 //       auto:true,
 //       video: true,
 //       useCSS: false,
 //       controls:false,             //arrows are not shown
 //       autoHover:true,
-//       pager:false ,
-//       stopAutoOnClick:true             //Dots are not displayed
+//       pager:false 
+//       // stopAutoOnClick:true             //Dots are not displayed
 
 //     });
 
 console.log("here");
-var slider = $('.bxslider').bxSlider({
-      auto:true
+  var slider = $('.bxslider').bxSlider({
+      auto:true,
+      hideControlOnEnd:true,
+      pager:false,
+      controls:false
     });
 
 
@@ -31,9 +34,7 @@ var slider = $('.bxslider').bxSlider({
     $( '.video-close' ).on( 'click', function() {
         $( '.videoContainer' ).addClass( 'hide' );
          $( '.videoContainer' ).removeClass( 'show' );
-         // $('.video')[0].pause();
          $('.videoContainer iframe').attr('src', '');
-         // $('.youtubeplayer').stopVideo();
          $( 'body' ).removeClass('bodyClass');
     });
 
