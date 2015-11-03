@@ -1,21 +1,26 @@
 $( document ).ready( function(){
-  
-var slider = $('.bxslider').bxSlider({
-      speed:500,
-      infiniteLoop:true,
-      hideControlOnEnd:true,
-      auto:true,
-      video: true,
-      useCSS: false, 
-      controls:false,             //arrows are not shown
-      autoHover:true,
-      pager:false ,
-      stopAutoOnClick:true             //Dots are not displayed
 
+// var slider = $('.bxslider').bxSlider({
+//       speed:500,
+//       infiniteLoop:true,
+//       hideControlOnEnd:true,
+//       auto:true,
+//       video: true,
+//       useCSS: false,
+//       controls:false,             //arrows are not shown
+//       autoHover:true,
+//       pager:false ,
+//       stopAutoOnClick:true             //Dots are not displayed
+
+//     });
+
+console.log("here");
+var slider = $('.bxslider').bxSlider({
+      auto:true
     });
 
 
-      
+
     $('.btn-play').click(function(){
       console.log('showing1111111');
       $('.videoContainer').addClass('show');
@@ -31,7 +36,7 @@ var slider = $('.bxslider').bxSlider({
          // $('.youtubeplayer').stopVideo();
          $( 'body' ).removeClass('bodyClass');
     });
-       
+
     // $('.color5').click(function(e){
     //     e.preventDefault();
     //      $('.bg').fadeOut(300, function() {
