@@ -4612,13 +4612,13 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 430px;
+  height: 450px;
   text-align: center;
   margin: auto;
 }
 @media (max-width: 399px) {
   .main-section .image-container {
-    height: 200px;
+    height: 175px;
   }
 }
 @media (min-width: 400px) and (max-width: 599px) {
@@ -4642,7 +4642,7 @@ body {
   max-height: 100%;
   opacity: .5;
   position: absolute;
-  top: 37%;
+  top: 60%;
   left: 47%;
   margin: auto;
   z-index: 1;
@@ -5024,12 +5024,12 @@ body {
   left: 0;
   padding: 10px 15px 0 15px;
   display: none;
-  color: white;
+  color: gainsboro;
   line-height: 1;
   letter-spacing: 1;
   text-align: center;
   text-shadow: 0px 0px 2px #000;
-  font-weight: 500;
+  font-weight: 300;
 }
 .feature-section .fs-image .fs-image-text-heading {
   z-index: 1;
@@ -5042,22 +5042,18 @@ body {
 }
 .feature-section .fs-image .fs-text2 {
   padding: 130px 10 0 30px;
-  color: white;
   text-align: left;
 }
 .feature-section .fs-image .fs-text3 {
   padding: 40px 0 0 30px;
-  color: black;
   font-weight: 700;
 }
 .feature-section .fs-image .fs-text4 {
   padding: 40px 0 0 30px;
-  color: black;
   font-weight: 700;
 }
 .feature-section .fs-image .fs-text5 {
   padding: 40px 160px 0 170px;
-  color: white;
   text-align: left;
 }
 .feature-section .fs-image .blackColor {

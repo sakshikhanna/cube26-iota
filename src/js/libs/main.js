@@ -19,7 +19,7 @@ console.log("here");
       auto:true,
       hideControlOnEnd:true,
       pager:false,
-      controls:false
+      controls:true
     });
 
 
@@ -36,34 +36,5 @@ console.log("here");
          $( '.videoContainer' ).removeClass( 'show' );
          $('.videoContainer iframe').attr('src', '');
          $( 'body' ).removeClass('bodyClass');
-    });
-
-    // $('.color5').click(function(e){
-    //     e.preventDefault();
-    //      $('.bg').fadeOut(300, function() {
-    //         $('.bg').attr("src","../../Images/Philips_Hue_1_pink.jpg");
-    //         $('.bg').fadeIn(300);
-    //     });
-    // })
-    // $('.color4').click(function(e){
-    //     e.preventDefault();
-    //      $('.bg').fadeOut(300, function() {
-    //         $('.bg').attr("src","../../Images/Philips_Hue_1.jpg");
-    //         $('.bg').fadeIn(300);
-    //     });
-    // })
-    // $('.color1').click(function(e){
-    //     e.preventDefault();
-    //      $('.bg').fadeOut(300, function() {
-    //         $('.bg').attr("src","../../Images/Philips_Hue_1_green.jpg");
-    //         $('.bg').fadeIn(300);
-    //     });
-    // })
-    // $('.color2').click(function(e){
-    //     e.preventDefault();
-    //      $('.bg').fadeOut(300, function() {
-    //         $('.bg').attr("src","../../Images/Philips_Hue_1_red.jpg");
-    //         $('.bg').fadeIn(300);
-    //     });
-    // })
+    });    
 });
