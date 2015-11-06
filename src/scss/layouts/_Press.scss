@@ -1,6 +1,10 @@
 .press-icons-section{
-	width: 90%;
+	width: 100%;
 	height: 15%;
+	// height: 50%;
+	@include media( '<800px' ) {
+		height: 40%;
+	}
 	margin: auto;
 	// border: 1px solid;
 	margin:5% auto;
@@ -8,9 +12,9 @@
 	// margin-left: 10%;
 	.test1{
 		position: relative;
-		width: 100%;
+		width: 90%;
 		margin:auto;
-		height: 100%;
+		// height: 100%;
 	}
 	.fs-hidden-text{
 		width: 100%;
@@ -21,7 +25,7 @@
 		// text-align: center;
 		display: none;
 		z-index: 5;
-		// border: 1px solid;
+		border: 1px solid;
 		@extend .normal-text;
 
 	}
@@ -38,13 +42,16 @@
 		@include media( '<800px' ) {
 			// height: 40%;
 			width: 50%;
+			height: 40%;
+			// border: 1px solid blue;
 			margin-bottom: 20px;
 		}
 		@include media( '>=800px' ) {
 			// width: 16.5%;
 			width: 25%;
+			height: 100%;
 		}
-		height: 100%;
+		
 		 // border: 1px dashed;
 		float: left;
 	}
@@ -82,6 +89,9 @@
 	// }
 	.e-marginAdjust{
 		margin-top: 40px;
+	}
+	.e-marginAdjust1{
+		margin-top: 20px;
 	}
 }
 

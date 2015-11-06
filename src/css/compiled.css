@@ -4499,16 +4499,20 @@ body {
 }
 
 .press-icons-section {
-  width: 90%;
+  width: 100%;
   height: 15%;
   margin: auto;
   margin: 5% auto;
 }
+@media (max-width: 799px) {
+  .press-icons-section {
+    height: 40%;
+  }
+}
 .press-icons-section .test1 {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: auto;
-  height: 100%;
 }
 .press-icons-section .fs-hidden-text {
   width: 100%;
@@ -4518,21 +4522,23 @@ body {
   height: inherit;
   display: none;
   z-index: 5;
+  border: 1px solid;
 }
 .press-icons-section .fs-icon-text {
   position: relative;
-  height: 100%;
   float: left;
 }
 @media (max-width: 799px) {
   .press-icons-section .fs-icon-text {
     width: 50%;
+    height: 40%;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 800px) {
   .press-icons-section .fs-icon-text {
     width: 25%;
+    height: 100%;
   }
 }
 .press-icons-section .icon-container {
@@ -4563,6 +4569,9 @@ body {
 }
 .press-icons-section .e-marginAdjust {
   margin-top: 40px;
+}
+.press-icons-section .e-marginAdjust1 {
+  margin-top: 20px;
 }
 
 .bodyClass {
