@@ -4376,7 +4376,7 @@ body {
 }
 .footer-container .footer-section {
   width: 100%;
-  height: 30%;
+  height: 33%;
   padding-top: 20px;
   background-color: #959595;
 }
@@ -4405,7 +4405,7 @@ body {
 }
 .footer-container .fm-container {
   height: 100%;
-  width: 33%;
+  width: 31%;
   float: left;
   text-align: left;
 }
@@ -4591,24 +4591,35 @@ body {
 }
 .videoContainer .video {
   position: absolute;
-  width: 60%;
-  height: 95%;
-  top: 50px;
-  left: 20%;
+  width: 90%;
+  height: 90%;
+  left: 5%;
 }
 @media (max-width: 799px) {
   .videoContainer .video {
-    width: 80%;
     left: 5%;
   }
 }
 .videoContainer .video-close {
-  right: 10%;
-  top: 30px;
+  right: 10px;
+  top: 15px;
+  z-index: 1;
 }
-@media (max-width: 799px) {
+@media (max-width: 399px) {
   .videoContainer .video-close {
+    font-size: 1.333rem;
+    z-index: 1;
     right: 5%;
+    font-weight: 700;
+    color: white;
+  }
+}
+@media (max-width: 799px) and (min-width: 400px) {
+  .videoContainer .video-close {
+    font-size: 1.77689rem;
+    z-index: 1;
+    right: 5px;
+    font-weight: 700;
   }
 }
 
@@ -4621,7 +4632,6 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 450px;
   text-align: center;
   margin: auto;
 }
@@ -4630,12 +4640,6 @@ body {
     height: 175px;
   }
 }
-@media (min-width: 400px) and (max-width: 599px) {
-  .main-section .image-container {
-    height: 300px;
-  }
-}
-
 .main-section .image-container img {
   display: inline;
   max-width: 100%;
@@ -4741,7 +4745,7 @@ body {
   overflow: hidden;
   width: 95%;
   margin: auto;
-  max-height: 100%;
+  max-height: 110%;
 }
 .lighting-section1 img {
   max-width: 100%;
@@ -4750,7 +4754,7 @@ body {
 }
 @media (min-width: 901px) {
   .lighting-section1 img {
-    margin-top: -15%;
+    margin-top: -1%;
   }
 }
 .lighting-section1 .is-text {
@@ -4785,7 +4789,7 @@ body {
 
 @media (max-width: 499px) {
   .lighting-section1 .is-text .is-text1 {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 1.333rem;
     font-family: "Roboto", sans-serif;
   }
@@ -4804,7 +4808,7 @@ body {
 
 @media (max-width: 499px) {
   .lighting-section1 .is-text .is-text2 {
-    padding-top: 5px;
+    padding-top: 1px;
     font-size: 1.77689rem;
     font-family: "Roboto", sans-serif;
   }
