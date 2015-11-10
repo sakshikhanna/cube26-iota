@@ -5,10 +5,10 @@
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
   MIT License: https://github.com/driftyco/ionicons
 
-  Android-style icons originally built by Googleâ€™s
+  Android-style icons originally built by GoogleΓÇÖs
   Material Design Icons: https://github.com/google/material-design-icons
   used under CC BY http://creativecommons.org/licenses/by/4.0/
-  Modified icons to fit ioniconâ€™s grid from original.
+  Modified icons to fit ioniconΓÇÖs grid from original.
 */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -4173,16 +4173,16 @@ input[type="checkbox"], input[type="radio"] {
   font-size: 0.75019rem;
 }
 
-.normal-text, .header-container .header-menu, .footer-container .fm-container li, .footer-container .footer-download .footer-container li, .press-icons-section .fs-hidden-text, .main-section .main-section-heading, .main-section .icon-text .icon-container .icon-text-container, .lighting-section1 .lg-content, .feature-section .fs-image .fs-image-text, .feature-icons-section .fs-hidden-text, .plug-play-section .content, .IL-main-section .ms-text, .prop-row, .DA-heading .heading2-container .heading2-content, .aboutus-container .aboutUs-content, .contactUs-container .contactUs-form {
+.normal-text, .header-container .header-menu, .footer-container .fm-container li, .footer-container .footer-download .footer-container li, .press-icons-section .fs-hidden-text, .main-section .main-section-heading, .main-section .icon-text .icon-container .icon-text-container, .lighting-section1 .lg-content, .feature-section .fs-image .fs-image-text, .feature-icons-section .fs-hidden-text, .plug-play-section .content, .IL-main-section .ms-text, .prop-row, .DA-heading .heading2-container .heading2-content, .aboutus-container .aboutUs-content, .contactUs-container .contactUs-form, .FAQ-section .quest-ans {
   font-size: 1rem;
 }
 
-.big-text, .header-menu-mobile, .feature-section .fs-image .fs-image-text-heading, .lite-image-icon .lite-icon-container .text-container, .feature-icons-section .text-container, .plug-play-section .pp-img-container .icon-text-container, .prop-heading {
+.big-text, .header-menu-mobile, .feature-section .fs-image .fs-image-text-heading, .lite-image-icon .lite-icon-container .text-container, .feature-icons-section .text-container, .plug-play-section .pp-img-container .icon-text-container, .prop-heading, .contact-us-container .contact-info, .FAQ-section .heading {
   font-size: 1.333rem;
   font-family: "Roboto", sans-serif;
 }
 
-.very-big-text, .content .is-text1, .DA-main-section .ms-text {
+.very-big-text, .content .is-text1, .DA-main-section .ms-text, .contact-us-container .text-heading, .FAQ-section .FAQ-heading {
   font-size: 1.77689rem;
   font-family: "Roboto", sans-serif;
 }
@@ -4568,7 +4568,7 @@ body {
   left: 0;
 }
 .press-icons-section .e-marginAdjust {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .press-icons-section .e-marginAdjust1 {
   margin-top: 20px;
@@ -5438,7 +5438,7 @@ body {
   font-weight: 300;
   margin: auto;
 }
-.plug-play-section .purpleColor {
+.plug-play-section .purpleColor, .plug-play-section .FAQ-section .heading, .FAQ-section .plug-play-section .heading {
   color: #281b2c;
 }
 @media (min-width: 501px) and (max-width: 799px) {
@@ -5900,6 +5900,215 @@ body {
   }
   .contactUs-container .contactUs-form {
     font-size: 0.75019rem;
+  }
+}
+
+.purpleColor, .FAQ-section .heading {
+  color: #af38ae;
+}
+
+@media (max-width: 800px) {
+  .contact-us-text {
+    display: none;
+  }
+
+  .contact-us-text1 {
+    display: block;
+  }
+}
+@media (min-width: 801px) {
+  .contact-us-text {
+    display: block;
+  }
+
+  .contact-us-text1 {
+    display: none;
+  }
+}
+.contact-us-container {
+  color: #b2b2b2;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+.contact-us-container .contact-us-text {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 800px) {
+  .contact-us-container .contact-us-text {
+    width: 100%;
+  }
+}
+.contact-us-container .contact-us-text1 {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 800px) {
+  .contact-us-container .contact-us-text1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+}
+.contact-us-container .contact-us-image {
+  width: 50%;
+  float: left;
+}
+.contact-us-container .contact-us-image .image-cont {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  .contact-us-container .contact-us-image {
+    width: 100%;
+  }
+  .contact-us-container .contact-us-image .image-cont {
+    width: 50%;
+    margin: auto;
+  }
+}
+.contact-us-container .contact-us-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.contact-us-container .text-heading {
+  margin-left: 15px;
+}
+@media (max-width: 500px) {
+  .contact-us-container .text-heading {
+    font-size: 1.333rem;
+  }
+}
+.contact-us-container .contact-info {
+  margin-top: 40px;
+  text-align: center;
+  line-height: .2;
+  letter-spacing: .3;
+}
+@media (max-width: 800px) {
+  .contact-us-container .contact-info {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-us-container .contact-info {
+    font-size: 1rem;
+    line-height: .5;
+  }
+}
+
+.FAQ-section {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.FAQ-section .FAQ-heading {
+  color: #b2b2b2;
+  margin-top: 35%;
+  margin-left: 1%;
+}
+@media (max-width: 500px) {
+  .FAQ-section .FAQ-heading {
+    font-size: 1.333rem;
+    line-height: 1.5;
+  }
+}
+.FAQ-section .quest-ans-section {
+  margin-top: 20px;
+  margin-left: 1%;
+}
+.FAQ-section .FAQ-left-section {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 800px) {
+  .FAQ-section .FAQ-left-section {
+    width: 100%;
+  }
+}
+.FAQ-section .FAQ-right-section {
+  width: 50%;
+  float: left;
+}
+@media (max-width: 800px) {
+  .FAQ-section .FAQ-right-section {
+    width: 100%;
+  }
+}
+.FAQ-section .heading {
+  font-weight: 500;
+  padding-top: 20px;
+}
+.FAQ-section .quest-ans {
+  padding-top: 5px;
+  padding-bottom: 35px;
+  width: 100%;
+  letter-spacing: .5;
+}
+.FAQ-section .down-arrow {
+  position: relative;
+  width: 100%;
+  color: #b2b2b2;
+}
+.FAQ-section .down-arrow .img-down-arrow {
+  width: 3%;
+  padding-top: 15px;
+  opacity: .5;
+  float: left;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .FAQ-section .down-arrow .img-down-arrow {
+    width: 5%;
+  }
+}
+.FAQ-section .down-arrow .img-down-arrow img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.FAQ-section .down-arrow .ques {
+  width: 95%;
+  float: left;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.FAQ-section .down-arrow .ans {
+  width: 100%;
+  color: #656565;
+  padding-right: 50px;
+  float: left;
+  padding-left: 30px;
+  padding-top: 5px;
+  display: none;
+  line-height: 1;
+  letter-spacing: .5;
+}
+.FAQ-section .down-arrow .paddingLeft {
+  padding-left: 0 !important;
+}
+.FAQ-section .down-arrow .paddingLeft li {
+  padding-bottom: 7px;
+}
+
+.display {
+  display: block !important;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.marginBottom {
+  top: 40px;
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .marginBottom {
+    top: 20px;
+  }
+}
+
+@media (max-width: 499px) {
+  .marginBottom {
+    top: 5px;
   }
 }
 

@@ -1,19 +1,4 @@
 $( document ).ready( function(){
-
-// var slider = $('.bxslider').bxSlider({
-//       speed:500,
-//       // infiniteLoop:true,
-//       hideControlOnEnd:true,
-//       auto:true,
-//       video: true,
-//       useCSS: false,
-//       controls:false,             //arrows are not shown
-//       autoHover:true,
-//       pager:false 
-//       // stopAutoOnClick:true             //Dots are not displayed
-
-//     });
-
 console.log("here");
   var slider = $('.bxslider').bxSlider({
       auto:true,
@@ -43,5 +28,12 @@ console.log("here");
          $('.bx-controls-direction').addClass('show');
          $('.videoContainer iframe').attr('src', '');
          $( 'body' ).removeClass('bodyClass');
-    });    
+    });   
+    $( '.img-down-arrow').on('click',function(){
+      // console.log('1111111111111111111');
+      $(this).parent().parent().parent().parent().siblings().find('.ans').removeClass('display');
+       $(this).parent().parent().parent().siblings().find('.ans').removeClass('display');
+       $(this).parent().parent().siblings().find('.ans').removeClass('display');
+       $(this).parent().find('.ans').toggleClass('display');      
+    }) 
 });
