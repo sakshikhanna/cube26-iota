@@ -5948,15 +5948,17 @@ body {
   .contact-us-container .contact-us-text1 {
     width: 100%;
     text-align: center;
+    margin-top: 10%;
     margin-bottom: 20%;
   }
 }
 .contact-us-container .contact-us-image {
   width: 50%;
+  margin: auto;
   float: left;
 }
 .contact-us-container .contact-us-image .image-cont {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 @media (max-width: 800px) {
@@ -6095,6 +6097,10 @@ body {
   display: block !important;
   z-index: 1;
   margin-bottom: 10px;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
 }
 
 .marginBottom {
