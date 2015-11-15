@@ -4745,12 +4745,10 @@ body {
   overflow: hidden;
   width: 95%;
   margin: auto;
-  max-height: 110%;
 }
 .lighting-section1 img {
   max-width: 100%;
-  min-height: 100%;
-  max-height: 1150px;
+  max-height: 100%;
 }
 @media (min-width: 901px) {
   .lighting-section1 img {
@@ -5102,6 +5100,9 @@ body {
   z-index: 2;
   opacity: .5;
 }
+.feature-section .fs-image .image5-height {
+  height: 334px !important;
+}
 .feature-section .fs-image img {
   max-width: 100%;
   max-height: 100%;
@@ -5169,7 +5170,7 @@ body {
   float: none;
 }
 @media (max-width: 800px) {
-  .feature-section .fs-image-right, .feature-section .fs-image-center {
+  .feature-section .fs-image-right, .feature-section .fs-image-center, .feature-section .fs-image {
     float: none;
     margin: 0 auto 20px auto;
   }
