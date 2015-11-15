@@ -4173,7 +4173,7 @@ input[type="checkbox"], input[type="radio"] {
   font-size: 0.75019rem;
 }
 
-.normal-text, .header-container .header-menu, .footer-container .fm-container li, .footer-container .footer-download .footer-container li, .press-icons-section .fs-hidden-text, .main-section .main-section-heading, .main-section .icon-text .icon-container .icon-text-container, .lighting-section1 .lg-content, .feature-section .fs-image .fs-image-text, .feature-icons-section .fs-hidden-text, .plug-play-section .content, .IL-main-section .ms-text, .prop-row, .DA-heading .heading2-container .heading2-content, .aboutus-container .aboutUs-content, .contactUs-container .contactUs-form, .FAQ-section .quest-ans {
+.normal-text, .header-container .header-menu, .footer-container .fm-container li, .footer-container .footer-download .footer-container li, .press-icons-section .fs-hidden-text, .main-section .main-section-heading, .main-section .icon-text .icon-container .icon-text-container, .lighting-section1 .lg-content, .feature-section .fs-image .fs-image-text, .feature-icons-section .fs-hidden-text, .plug-play-section .content, .IL-main-section .ms-text, .prop-row, .DA-heading .heading2-container .heading2-content, .aboutus-container .aboutUs-content, .contactUs-container .contactUs-form, .FAQ-section .quest-ans, .text-img-btn .btn-container p {
   font-size: 1rem;
 }
 
@@ -4182,12 +4182,12 @@ input[type="checkbox"], input[type="radio"] {
   font-family: "Roboto", sans-serif;
 }
 
-.very-big-text, .content .is-text1, .DA-main-section .ms-text, .contact-us-container .text-heading, .FAQ-section .FAQ-heading {
+.very-big-text, .content .is-text1, .DA-main-section .ms-text, .contact-us-container .text-heading, .FAQ-section .FAQ-heading, .text-img-btn .text-container .light {
   font-size: 1.77689rem;
   font-family: "Roboto", sans-serif;
 }
 
-.huge-text, .header-menu-mobile .header-menu-mobile-close, .lighting-section1 .is-text .is-text1, .plug-play-section .heading, .DA-heading, .contactUs-container .contactUs-heading {
+.huge-text, .header-menu-mobile .header-menu-mobile-close, .lighting-section1 .is-text .is-text1, .plug-play-section .heading, .DA-heading, .contactUs-container .contactUs-heading, .text-img-btn .text-container {
   font-size: 2.36859rem;
   font-family: "Roboto", sans-serif;
 }
@@ -6116,6 +6116,57 @@ body {
   .marginBottom {
     top: 5px;
   }
+}
+
+.text-img-btn {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.text-img-btn .text-container {
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #656565;
+  line-height: 1.5;
+}
+@media (max-width: 750px) {
+  .text-img-btn .text-container {
+    font-size: 1.77689rem;
+  }
+}
+@media (max-width: 750px) {
+  .text-img-btn .text-container .light {
+    font-size: 1.333rem;
+  }
+}
+.text-img-btn .img-container {
+  width: 200px;
+  margin: auto;
+}
+.text-img-btn .img-container img {
+  width: 100%;
+  margin: auto;
+  opacity: .5;
+}
+.text-img-btn .btn-container {
+  border: 1px solid;
+  width: 250px;
+  line-height: 1;
+  border-radius: 5px;
+  text-align: center;
+  color: #656565;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 20px auto;
+}
+.text-img-btn .btn-container:hover {
+  color: #4c4c4c;
+  font-weight: 700;
+}
+.text-img-btn .btn-container a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=compiled.css.map */

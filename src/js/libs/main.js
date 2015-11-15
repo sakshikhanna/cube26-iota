@@ -31,7 +31,7 @@ console.log("here");
     });   
     $( '.img-down-arrow').on('click',function(){
       // console.log('1111111111111111111');
-      $(this).parent().parent().parent().parent().siblings().find('.ans').removeClass('display');
+       $(this).parent().parent().parent().parent().siblings().find('.ans').removeClass('display');
        $(this).parent().parent().parent().siblings().find('.ans').removeClass('display');
        $(this).parent().parent().siblings().find('.ans').removeClass('display');
        $(this).parent().find('.ans').toggleClass('display');      
